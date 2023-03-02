@@ -1,0 +1,7 @@
+NAME: 'SCDNet'
+MODEL: 
+  NETWORK: 'SCDNet'
+  ENCODER: ['BaseEncoder',[3, False]]
+  NECK: ['CSANeck', [512, 128,4]]
+  HEAD: ['BaseHead', [128,7]]
+CRITERION: 'SCD_loss'
